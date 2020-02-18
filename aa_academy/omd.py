@@ -24,8 +24,8 @@ def game(step, tree):
         if (step==3 or step==5) and option=='park':
             print 'Утка весь день гуляла по парку и чудесно провела время. Победа.'
         elif step==4:
-            if option=='pro': print 'Утка проголосовала за, поправки были приняты.'
-            if option=='con': print 'Утка проголосовала против, но поправки все равно уже приняты. Да и кому интересно мнение утки?'
+            if option=='pro': print 'Утка проголосовала за'
+            if option=='con': print 'Утка проголосовала против'
         elif step==7 and option=='no': print 'Утка промокла и замерзла во время прогулки, бедная утка :('
         elif step==8 and option=='yes': game_in_game()
         if options[option]:
@@ -52,7 +52,7 @@ if __name__ == '__main__':
             'options': {'pro': None, 'con': None}
         },
         5: {
-            'text': 'Утка надеется на явку менее 50% и не идет на выборы. Куда пойдет утка в сей чудесный день?',
+            'text': 'Утка не идет на выборы. Куда пойдет утка в сей чудесный день?',
             'options': {'forest': 6, 'park': None}
         },
         6: {
